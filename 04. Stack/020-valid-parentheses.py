@@ -23,6 +23,8 @@ def validParentheses(input: str) -> bool:
                 # now we pop it from the stack
                 # so it is not stored there anymore
                 stack.pop()
+            else:
+                return False
         # else, meaning if we don't have it inside closeTopen
         # we know it's the opening value
         else:
